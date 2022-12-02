@@ -1,5 +1,8 @@
+import os
+import sys
+
 def part2():
-    with open("/home/raskovnic/learning/advent-of-code/2022/day1/data.txt", "r") as fp:
+    with open(os.path.join(sys.path[0], 'data.txt'), "r") as fp:
         carry = [0]*3
         s = 0
         data = fp.read().split("\n")
